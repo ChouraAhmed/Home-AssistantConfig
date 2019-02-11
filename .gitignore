@@ -6,7 +6,10 @@
 !*.yaml
 !.gitignore
 !*.md
-
+!lights
+!lights/restarts
+!input_numbers
+!automations
 # Ignore folders.
 .storage
 .cloud

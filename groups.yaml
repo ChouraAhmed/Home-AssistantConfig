@@ -1,0 +1,17 @@
+room_lights:
+  name: "Group"
+  entities:
+    - group.Ahmed_Room_Lights
+    - group.Ahmed_Room_Restarts
+Ahmed_Room_Lights:
+  name: "Ahmed Room Lights"
+  entities:
+    - light.dimmer_lamp
+    - input_number.lr_dimmer
+    - light.white_leds
+
+Ahmed_Room_Restarts:
+  name: "Ahmed Room Restarts"
+  entities:
+    - light.reset_dimmer_lamp
+    - light.reset_white_leds

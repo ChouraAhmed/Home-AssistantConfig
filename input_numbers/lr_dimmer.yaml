@@ -1,0 +1,6 @@
+lr_dimmer:
+  name: Brightness
+  initial: 150
+  min: 5
+  max: 250
+  step: 20

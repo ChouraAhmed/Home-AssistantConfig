@@ -1,0 +1,10 @@
+light.reset_white_leds:
+  icon: mdi:restart
+light.white_leds:
+  icon: mdi:ceiling-light
+light.dimmer_lamp:
+  icon: mdi:ceiling-light
+light.reset_dimmer_lamp:
+  icon: mdi:restart
+input_number.lr_dimmer:
+  icon: mdi:brightness-7

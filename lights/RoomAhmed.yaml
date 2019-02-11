@@ -1,0 +1,15 @@
+- platform: mqtt
+  name: White Leds
+  command_topic: RoomAhmedSwitchLeds
+  payload_on: "on"
+  payload_off: "off"
+  qos: 2
+  retain: true
+
+- platform: mqtt
+  name: Dimmer_Lamp
+  command_topic: RoomAhmedDimmerLamp
+  payload_on: "300"
+  payload_off: "0"
+  qos: 2
+  retain: true

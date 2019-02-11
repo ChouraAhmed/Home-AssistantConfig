@@ -1,0 +1,13 @@
+- platform: mqtt
+  name: Reset White_Leds
+  command_topic: RoomAhmedSwitchLeds
+  payload_on: reset
+  qos: 2
+  retain: true
+
+- platform: mqtt
+  name: Reset Dimmer_Lamp
+  command_topic: RoomAhmedDimmerLamp
+  payload_on: "reset"
+  qos: 2
+  retain: true
