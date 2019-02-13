@@ -9,6 +9,7 @@
 !lights
 !lights/restarts
 !input_numbers
+!binary_sensors
 !automations
 # Ignore folders.
 .storage

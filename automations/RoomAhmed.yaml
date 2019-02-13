@@ -14,3 +14,36 @@
     - data:
         entity_id: light.dimmer_lamp
       service: light.turn_on
+
+- id: '12151584646'
+  alias: Turn off light when someone outside
+  trigger:
+  - entity_id: binary_sensor.interior_door
+    from: 'on'
+    platform: state
+    to: 'off'
+    for:
+      seconds: 6
+  condition:
+  - condition: state
+    entity_id: light.white_leds
+    state: 'on'
+  action:
+  - data:
+      entity_id: group.ahmed_room_lights
+    service: light.turn_off
+- id: '1215494684646'
+  alias: Turn on white leds when someone inside
+  trigger:
+  - entity_id: binary_sensor.interior_door
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: group.ahmed_room_lights
+    state: 'off'
+  action:
+  - data:
+      entity_id: light.white_leds
+    service: light.turn_on

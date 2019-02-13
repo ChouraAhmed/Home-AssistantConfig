@@ -1,0 +1,25 @@
+- platform: mqtt
+  name: Interior Door
+  state_topic: RoomAhmedIntDoor
+  payload_on: "0"
+  payload_off: "1"
+  qos: 2
+
+- platform: template
+  sensors:
+    int_door:
+      friendly_name: "Int Door"
+      value_template: >-
+        {% if is_state('binary_sensor.interior_door', 'on') %}
+            Closed
+          {% elif is_state('binary_sensor.interior_door', 'off') %}
+            Open
+          {% else %}
+            failed
+          {% endif %}
+      icon_template: >-
+        {% if is_state('binary_sensor.interior_door', 'on') %}
+            mdi:door-closed
+          {% elif is_state('binary_sensor.interior_door', 'off') %}
+            mdi:door-open
+          {% endif %}

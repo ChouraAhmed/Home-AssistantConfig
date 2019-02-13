@@ -1,10 +1,19 @@
 light.reset_white_leds:
+  hidden: true
   icon: mdi:restart
 light.white_leds:
   icon: mdi:ceiling-light
 light.dimmer_lamp:
   icon: mdi:ceiling-light
 light.reset_dimmer_lamp:
+  hidden: true
   icon: mdi:restart
 input_number.lr_dimmer:
   icon: mdi:brightness-7
+group.ahmed_room_restarts:
+  hidden: true
+group.ahmed_room_lights: {}
+group.room_lights:
+  hidden: true
+binary_sensor.interior_door:
+  hidden: true

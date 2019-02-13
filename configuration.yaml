@@ -76,4 +76,5 @@ mqtt:
   port: 1883
 script: !include scripts.yaml
 light: !include_dir_merge_list lights/
+binary_sensor: !include_dir_merge_list binary_sensors/
 input_number: !include input_numbers/lr_dimmer.yaml
